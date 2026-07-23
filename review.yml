@@ -1,0 +1,75 @@
+aid: cadence-bank
+name: Cadence Bank
+review:
+  question: Does Cadence Bank expose a first-party public developer API, downloadable
+    API specifications, or documented FDX / CFPB Section 1033 data access?
+  answer: false
+  date: '2026-07-23'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    Cadence Bank (NYSE: CADE) exposes NO first-party public developer API and
+    runs NO public developer portal. Candidate developer hosts do not resolve
+    (no DNS record): developer.cadencebank.com, developers.cadencebank.com, and
+    api.cadencebank.com all failed to connect. The public marketing site at
+    cadencebank.com is live but returns HTTP 403 to automated clients (bot
+    protection) and surfaces no "Developers" or "APIs" section. No downloadable
+    OpenAPI/Swagger/Postman artifact exists, so nothing was harvested into
+    openapi/. Consumer-permissioned account data is reachable only through
+    third-party aggregators — Plaid coverage for Cadence Bank is documented
+    publicly (balances, transactions, auth, identity, income) — which is the
+    honest, aggregator-only posture typical of U.S. regional banks. No documented
+    direct FDX (Financial Data Exchange) membership and no published CFPB
+    Section 1033 first-party data-access API or stated posture were found. Because
+    there is no public API surface, no authentication model (OAuth2/OIDC/API-key/
+    mTLS) is documented at the institution level; any programmatic access is
+    governed by the aggregator's own auth flow, not Cadence Bank's.
+  authModel: none-documented (aggregator-intermediated only)
+  specProvenance: none (no downloadable OpenAPI/Swagger published)
+  openFinancePosture: aggregator-only (Plaid); no first-party API; no documented FDX; no published 1033 API
+  transports:
+  - protocol: REST
+    scheme: https
+    documented: false
+    note: No first-party REST API is documented for Cadence Bank.
+  - protocol: FDX
+    documented: false
+    note: No direct FDX-conformant first-party data-access API found; any FDX access would be aggregator/network-intermediated.
+  probes:
+  - url: https://developer.cadencebank.com
+    status: '000'
+    note: Does not resolve (no DNS / connection failed).
+  - url: https://developers.cadencebank.com
+    status: '000'
+    note: Does not resolve (no DNS / connection failed).
+  - url: https://api.cadencebank.com
+    status: '000'
+    note: Does not resolve (no DNS / connection failed).
+  - url: https://www.cadencebank.com
+    status: '403'
+    note: Live public site behind bot protection; no developer/API surface exposed.
+  - url: https://www.linkedin.com/company/cadence-bank
+    status: '200'
+    note: Official company LinkedIn page (confirmed live).
+  - url: https://ir.cadencebank.com
+    status: '403'
+    note: Investor relations site is live (403 to automated clients / bot protection).
+  - url: https://github.com/cadence-bank
+    status: '404'
+    note: No public GitHub organization found under this slug.
+sources:
+- url: https://www.cadencebank.com/
+  type: Website
+  note: Canonical marketing/banking site; no developer or API section.
+- url: https://ir.cadencebank.com/2021-10-29-BancorpSouth-Bank-and-Cadence-Bancorporation-Complete-Their-Merger
+  type: PressRelease
+  note: Confirms Oct 2021 BancorpSouth + Cadence Bancorporation merger, surviving entity renamed Cadence Bank (NYSE CADE), ~$48B assets, dual HQ Tupelo MS / Houston TX.
+- url: https://fintable.io/coverage/banks/United%20States/24757_cadence-bank
+  type: AggregatorCoverage
+  note: Documents Plaid-based aggregator access to Cadence Bank account and transaction data.
+actions:
+  openapiHarvested: false
+  reason: |
+    No public first-party API and no downloadable specification exist to harvest.
+    Record is identity-only (built-stub): honest "no public API, aggregator-only
+    (Plaid)" posture. No FDX membership or Section 1033 API documented.

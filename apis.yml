@@ -1,0 +1,40 @@
+aid: cadence-bank
+url: https://raw.githubusercontent.com/api-evangelist/cadence-bank/refs/heads/main/apis.yml
+name: Cadence Bank
+kind: company
+description: Cadence Bank is a regional U.S. commercial bank headquartered in Tupelo,
+  Mississippi and Houston, Texas, formed in October 2021 when legacy Cadence Bancorporation
+  merged into BancorpSouth Bank (the surviving entity, subsequently renamed Cadence
+  Bank; NYSE ticker CADE). It is a Mississippi state-chartered bank operating roughly
+  400+ branches across the U.S. South, Midwest, and Texas with about $48-50 billion
+  in assets, offering consumer banking, mortgages, home equity, credit cards, small
+  business and commercial banking, treasury management, and wealth/insurance services.
+  On open finance, Cadence Bank exposes no first-party public developer API or developer
+  portal; consumer-permissioned account data is reachable only through third-party
+  aggregators (notably Plaid), which is the honest, prevailing posture for most U.S.
+  regional banks. No documented direct FDX (Financial Data Exchange) membership or
+  published CFPB Section 1033 data-access API was found as of this profile.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Financial Services
+- Banking
+- United States
+- Regional Bank
+- Commercial Banking
+- Treasury Management
+- Open Finance
+- Data Aggregation
+created: '2026-07-23'
+modified: '2026-07-23'
+specificationVersion: '0.19'
+apis: []
+common:
+- type: Website
+  url: https://www.cadencebank.com/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/cadence-bank
+- type: InvestorRelations
+  url: https://ir.cadencebank.com/
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
