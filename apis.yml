@@ -29,12 +29,22 @@ modified: '2026-07-23'
 specificationVersion: '0.19'
 apis: []
 common:
+- type: DomainSecurity
+  url: security/cadence-bank-domain-security.yml
 - type: Website
   url: https://www.cadencebank.com/
 - type: LinkedIn
   url: https://www.linkedin.com/company/cadence-bank
 - type: InvestorRelations
   url: https://ir.cadencebank.com/
+- type: Support
+  url: https://cadencebank.com/customer-service
+- type: PrivacyPolicy
+  url: https://cadencebank.com/policies-and-disclosures/online-privacy-disclosure
+- type: TermsOfService
+  url: https://cadencebank.com/policies-and-disclosures
+- type: Login
+  url: https://portal.cadencebank.com/consumer/SignOn.aspx
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
