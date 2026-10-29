@@ -1,4 +1,4 @@
-# Cadence Bank (cadence-bank)
+# Cadence Bank
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,45 +64,82 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Cadence Bank is a regional U.S. commercial bank headquartered in Tupelo, Mississippi and Houston, Texas, formed in October 2021 when legacy Cadence Bancorporation merged into BancorpSouth Bank (the surviving entity, renamed Cadence Bank; NYSE: CADE). It is a Mississippi state-chartered bank with roughly 400+ branches across the U.S. South, Midwest, and Texas and about $48-50 billion in assets, serving consumers, small businesses, and corporations.
+Cadence Bank is a regional U.S. commercial bank headquartered in Tupelo, Mississippi and Houston, Texas, formed in October 2021 when legacy Cadence Bancorporation merged into BancorpSouth Bank (the surviving entity, subsequently renamed Cadence Bank; NYSE ticker CADE). It is a Mississippi state-chartered bank operating roughly 400+ branches across the U.S. South, Midwest, and Texas with about $48-50 billion in assets, offering consumer banking, mortgages, home equity, credit cards, small business and commercial banking, treasury management, and wealth/insurance services. On open finance, Cadence Bank exposes no first-party public developer API or developer portal; consumer-permissioned account data is reachable only through third-party aggregators (notably Plaid), which is the honest, prevailing posture for most U.S. regional banks. No documented direct FDX (Financial Data Exchange) membership or published CFPB Section 1033 data-access API was found as of this profile.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/cadence-bank/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/cadence-bank/refs/heads/main/apis.yml)
+**Areas:** Financial Services · Banking · United States · Regional Bank · Commercial Banking · Treasury Management · Open Finance
 
-## Tags
+## Cadence Bank on APIs.io
 
-- Financial Services
-- Banking
-- United States
-- Regional Bank
-- Commercial Banking
-- Treasury Management
-- Open Finance
-- Data Aggregation
+Everything profiled for Cadence Bank is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/cadence-bank/](https://apis.io/providers/cadence-bank/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-07-23
-- **Modified:** 2026-07-23
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Security (1)
 
-Cadence Bank publishes **no first-party public developer API or developer portal**. Probes of `developer.cadencebank.com`, `developers.cadencebank.com`, and `api.cadencebank.com` do not resolve (no DNS), and the public site exposes no "Developers" or "APIs" surface. No downloadable OpenAPI/Swagger specification exists to harvest.
+Authentication, trust centre, and vulnerability disclosure.
 
-### Open-finance posture
+- [Cadence Bank Domain Security](https://apis.io/security/cadence-bank/cadence-bank-domain-security/)
 
-- **Aggregator-only access.** Consumer-permissioned account data (balances, transactions, identity, auth) is available to third parties only through data aggregators — Plaid coverage for Cadence Bank is documented publicly. There is no direct first-party data-access API.
-- **FDX (Financial Data Exchange).** No documented direct Cadence Bank FDX membership or FDX-conformant first-party endpoint was found. Any FDX-style access would be intermediated by an aggregator/network.
-- **CFPB Section 1033.** No published Cadence Bank Section 1033 (Personal Financial Data Rights) data-access API or stated posture was found as of this profile.
+## Where to find this API
 
-This is the honest, prevailing reality for most U.S. regional banks: open finance is voluntary and fragmented, and participation happens through aggregators/core providers rather than a public first-party API.
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.cadencebank.com/)
-- [LinkedIn](https://www.linkedin.com/company/cadence-bank)
-- [Investor Relations](https://ir.cadencebank.com/)
+- [Support](https://cadencebank.com/customer-service)
+- [Terms of service](https://cadencebank.com/policies-and-disclosures)
+- [Privacy policy](https://cadencebank.com/policies-and-disclosures/online-privacy-disclosure)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 9.9** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 4.8 |
+| Access clarity | 27.6 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.0** — Banking & Open Finance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/cadence-bank/](https://apis.io/providers/cadence-bank/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Cadence Bank: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/cadence-bank/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
